@@ -39,7 +39,7 @@ initMotor M3(mPINS[3]);
 initMotor M4(mPINS[4]);
 
 void initialDisplay(void); // display initial information
-void Motor(int num, long interval, int gotTime); // enable the number of the motor for given interval
+void Motor(long interval, int num, int gotTime); // enable the number of the motor for given interval
 void Cocktail(int M1_sec, int M2_sec, int M3_sec, int M4_sec); // make a coctail giving the quantities in [ml] for any pump
 int createQuantity(int quantity_ml); // conversion from [ml] to sec knowing [ml]/[sec] work time of a pump
 
@@ -55,7 +55,7 @@ void loop() {
     Cocktail(80,20,100,0); // make cocktail with given [ml]
     }
     else if (temp == '2'){
-    Cocktail(80,20,100,0);
+    Cocktail(80,80,40,0);
     }
     else if (temp == '3'){
     Cocktail(80,20,100,0); 
@@ -71,7 +71,7 @@ void initialDisplay(void){
     Serial.println(version);
 }
 
-void Motor(int num, long interval, int gotTime){
+void Motor(long interval, int num, int gotTime){
  
   unsigned long getTime = millis();
   
@@ -81,7 +81,6 @@ void Motor(int num, long interval, int gotTime){
   }
   else {
         digitalWrite(mPINS[num], LOW);
-        gotTime;
        }
 }
 
