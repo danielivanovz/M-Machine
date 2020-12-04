@@ -3,6 +3,6 @@
 
 ##### UPDATE _ 30April2016:
 
-It it an ATM328 based automatic bartender machine connecting trought Wi-Fi usig ESP Module and Android App. 
+It's an ATM328 with ESP based automatic bartender machine connecting trought Wi-Fi Android App. 
 
 
