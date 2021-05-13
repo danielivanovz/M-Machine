@@ -1,6 +1,6 @@
 //
 //    FILE: main.ino
-//  AUTHOR: Mo Team
+//  AUTHOR: Daniel Ivanov
 // VERSION: 0.9.00 
 // PURPOSE: Automatic Bartender Machine
 //    DATE: 2016-04-30
